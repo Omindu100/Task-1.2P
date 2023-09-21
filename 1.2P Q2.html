@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Concepts Example</title>
+</head>
+<body>
+    <script>
+        // String methods
+        var text = "Welcome to the JavaScript World!";
+        var length = text.length;
+        var uppercase = text.toUpperCase();
+        var lowercase = text.toLowerCase();
+        var indexOfWorld = text.indexOf("World");
+        var replaced = text.replace("JavaScript", "Web Development");
+
+        // Number methods
+        var number = 3.14159;
+        var toFixed = number.toFixed(2);
+        var exponential = number.toExponential(3);
+        var precision = number.toPrecision(4);
+        var convertedToString = number.toString();
+
+        // Array methods
+        var colors = ["red", "green", "blue", "yellow"];
+        var joined = colors.join(" - ");
+        var sliced = colors.slice(1, 3);
+        var indexOfBlue = colors.indexOf("blue");
+        colors.push("purple");
+
+        // Date methods
+        var currentDate = new Date();
+        var year = currentDate.getFullYear();
+        var month = currentDate.getMonth();
+        var day = currentDate.getDate();
+        var hours = currentDate.getHours();
+        var minutes = currentDate.getMinutes();
+
+        // Function methods
+        function greet(name) {
+            return "Hello, " + name + "!";
+        }
+
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        // Display results
+        document.write("<h1>String Methods:</h1>");
+        document.write("<p><b>Length:</b> " + length + "</p>");
+        document.write("<p><b>Uppercase:</b> " + uppercase + "</p>");
+        document.write("<p><b>Lowercase:</b> " + lowercase + "</p>");
+        document.write("<p><b>Index of 'World':</b> " + indexOfWorld + "</p>");
+        document.write("<p><b>Replaced Text:</b> " + replaced + "</p>");
+
+        document.write("<h1>Number Methods:</h1>");
+        document.write("<p><b>Fixed:</b> " + toFixed + "</p>");
+        document.write("<p><b>Exponential:</b> " + exponential + "</p>");
+        document.write("<p><b>Precision:</b> " + precision + "</p>");
+        document.write("<p><b>Converted to String:</b> " + convertedToString + "</p>");
+
+        document.write("<h1>Array Methods:</h1>");
+        document.write("<p><b>Joined:</b> " + joined + "</p>");
+        document.write("<p><b>Sliced:</b> " + sliced + "</p>");
+        document.write("<p><b>Index of 'blue':</b> " + indexOfBlue + "</p>");
+        document.write("<p><b>Modified Array:</b> " + colors + "</p>");
+
+        document.write("<h1>Date Methods:</h1>");
+        document.write("<p><b>Year:</b> " + year + "</p>");
+        document.write("<p><b>Month:</b> " + month + "</p>");
+        document.write("<p><b>Day:</b> " + day + "</p>");
+        document.write("<p><b>Hours:</b> " + hours + "</p>");
+        document.write("<p><b>Minutes:</b> " + minutes + "</p>");
+
+        document.write("<h1>Function Methods:</h1>");
+        document.write("<p>" + greet("John") + "</p>");
+        document.write("<p>Multiplication Result: " + multiply(5, 7) + "</p>");
+    </script>
+</body>
+</html>

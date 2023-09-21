@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ff6600; /* Changed header color to orange */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .sports-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .Heading {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .sport-box {
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid #333;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .sport-box:hover {
+            transform: scale(1.05);
+        }
+        p {
+            font-family: 'Arial', sans-serif;
+            color: #666;
+        }
+        .sport-name {
+            color: #333;
+            font-size: 1.5rem;
+        }
+        @media (max-width: 860px) {
+            .sports-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .sport-box {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 class="Heading">Popular Sports</h1>
+</header>
+<div class="sports-container">
+    <div class="sport-box">
+        <h2 class="sport-name">Soccer</h2>
+        <p>Soccer, also known as football in many parts of the world, is the world's most popular sport. It's played and watched by millions of fans globally.</p>
+    </div>
+    <div class="sport-box">
+        <h2 class="sport-name">Basketball</h2>
+        <p>Basketball is a fast-paced sport known for its high-flying dunks and competitive nature. It's a favorite sport in the United States and beyond.</p>
+    </div>
+    <div class="sport-box">
+        <h2 class="sport-name">Tennis</h2>
+        <p>Tennis is an individual or doubles sport played on a rectangular court. It's famous for major tournaments like Wimbledon and the US Open.</p>
+    </div>
+    <div class="sport-box">
+        <h2 class="sport-name">Golf</h2>
+        <p>Golf is a precision sport played on lush green courses. It's enjoyed by people of all ages and skill levels.</p>
+    </div>
+    <div class="sport-box">
+        <h2 class="sport-name">Swimming</h2>
+        <p>Swimming is a popular aquatic sport and a vital life skill. It offers a range of health benefits and competitive opportunities.</p>
+    </div>
+    <div class="sport-box">
+        <h2 class="sport-name">Baseball</h2>
+        <p>Baseball is America's pastime, known for its rich history, iconic stadiums, and passionate fan base.</p>
+    </div>
+</div>
+</body>
+</html>
